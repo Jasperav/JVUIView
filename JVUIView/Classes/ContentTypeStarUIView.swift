@@ -33,7 +33,7 @@ open class ContentTypeJVUIView: Copyable, Sizeable {
     public var backgroundColor: UIColor?
     public var backgroundImage: UIImage?
     public var backgroundImageAlpha: CGFloat?
-    public var backgroundImageContentMode = UIViewContentMode.scaleAspectFill
+    public var backgroundImageContentMode = UIView.ContentMode.scaleAspectFill
     public var backgroundContentTypeJVGradientLayer: [ContentTypeJVGradientLayer]?
     public var backgroundContentTypeJVGradientLayerPoint: ContentTypeJVGradientLayerPoint?
     

@@ -1,11 +1,13 @@
+import UIKit
+
 public final class ContentTypeJVUIViewStacked: ContentTypeJVUIView {
     
     public var contentTypesJVUIView: [ContentTypeJVUIView]
-    public var distribution: UIStackViewDistribution
-    public var axis: UILayoutConstraintAxis
+    public var distribution: UIStackView.Distribution
+    public var axis: NSLayoutConstraint.Axis
     public var spacingBetweenViews: CGFloat
     
-    public init(contentTypeId: String?, contentTypesJVUIView: [ContentTypeJVUIView], distribution: UIStackViewDistribution, axis: UILayoutConstraintAxis, spacingBetweenViews: CGFloat) {
+    public init(contentTypeId: String?, contentTypesJVUIView: [ContentTypeJVUIView], distribution: UIStackView.Distribution, axis: NSLayoutConstraint.Axis, spacingBetweenViews: CGFloat) {
         self.contentTypesJVUIView = contentTypesJVUIView
         self.distribution = distribution
         self.axis = axis

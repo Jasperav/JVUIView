@@ -193,7 +193,7 @@ open class JVUIView: UIView, Sizeable {
             shapeSpawnerView = ShapeSpawnerView(contentTypeShapeSpawner: contentType.contentTypeShapeSpawner,
                                                 contentTypeShapes: contentType.shapeGroupIdForContentTypeShapeSpawner?.contentTypeShapes)
             shapeSpawnerView!.fill(toSuperview: self)
-            sendSubview(toBack: shapeSpawnerView!)
+            sendSubviewToBack(shapeSpawnerView!)
         }
         
         addShadow()
@@ -221,7 +221,7 @@ open class JVUIView: UIView, Sizeable {
             }
             
             view.fill(toSuperview: contentView)
-            contentView.sendSubview(toBack: view)
+            contentView.sendSubviewToBack(view)
             
         } else {
             if let borderColor = contentType.borderColor {
@@ -240,7 +240,7 @@ open class JVUIView: UIView, Sizeable {
             self.backgroundImage.setHuggingAndCompression(to: 200)
             self.backgroundImage.alpha = contentType.backgroundImageAlpha ?? 1
             
-            contentView.sendSubview(toBack: self.backgroundImage)
+            contentView.sendSubviewToBack(self.backgroundImage)
         }
         
         if let contentTypeSunBurstView = contentType.contentTypeSunBurstView {
@@ -293,11 +293,11 @@ open class JVUIView: UIView, Sizeable {
             starUIViewTop!.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
             
             bottomConstraintForJVUIViewTop!.isActive = true
-            sendSubview(toBack: starUIViewTop!)
+            sendSubviewToBack(starUIViewTop!)
         }
         
         for subview in existingViews {
-            bringSubview(toFront: subview)
+            bringSubviewToFront(subview)
         }
         
         guard contentType.useMinimumWidth ?? false, let constant = contentType.minimumWidth else { return }

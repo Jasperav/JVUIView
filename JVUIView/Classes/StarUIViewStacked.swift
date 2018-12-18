@@ -1,3 +1,5 @@
+import UIKit
+
 open class JVUIViewStacked: JVUIView {
     
     var contentTypeStacked: ContentTypeJVUIViewStacked!
