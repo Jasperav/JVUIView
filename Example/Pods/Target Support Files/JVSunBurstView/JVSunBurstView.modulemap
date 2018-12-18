@@ -1,0 +1,6 @@
+framework module JVSunBurstView {
+  umbrella header "JVSunBurstView-umbrella.h"
+
+  export *
+  module * { export * }
+}

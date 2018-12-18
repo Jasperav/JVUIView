@@ -1,0 +1,138 @@
+PODS:
+  - DeviceKit (1.11.0)
+  - JVCAGradientLayerExtensions (0.1.0)
+  - JVCALayerExtensions (0.1.1)
+  - JVCAShapeLayerExtensions (0.1.0)
+  - JVColorBlender (0.1.4):
+    - JVContentType
+    - JVRandomNumberGenerator
+  - JVConstraintEdges (0.1.9):
+    - JVContentType
+    - JVSizeable
+  - JVContentType (0.1.6)
+  - JVCurrentDevice (0.1.1):
+    - DeviceKit
+  - JVFontUtils (0.1.0)
+  - JVGradientLayer (0.1.2):
+    - JVCAGradientLayerExtensions
+    - JVContentType
+  - JVImageDownloader (0.1.4):
+    - JVConstraintEdges
+    - NVActivityIndicatorView
+  - JVRandomNumberGenerator (0.1.2)
+  - JVResizableViewBorder (0.1.1):
+    - JVContentType
+    - JVCurrentDevice
+  - JVRestartable (0.1.6)
+  - JVShadowView (0.1.3):
+    - JVColorBlender
+    - JVContentType
+  - JVShapeHalfMoon (0.1.1):
+    - JVCAShapeLayerExtensions
+    - JVContentType
+  - JVShapes (0.1.2):
+    - JVCALayerExtensions
+    - JVCAShapeLayerExtensions
+    - JVColorBlender
+    - JVConstraintEdges
+    - JVContentType
+    - JVRandomNumberGenerator
+    - JVRestartable
+    - JVTimeable
+    - JVUIViewExtensions
+  - JVSizeable (0.1.0)
+  - JVSunBurstView (0.1.1):
+    - JVCALayerExtensions
+    - JVConstraintEdges
+    - JVCurrentDevice
+    - JVUIViewExtensions
+  - JVTimeable (0.1.8):
+    - JVRestartable
+  - JVUIView (0.1.0):
+    - JVConstraintEdges
+    - JVFontUtils
+    - JVGradientLayer
+    - JVImageDownloader
+    - JVResizableViewBorder
+    - JVShadowView
+    - JVShapes
+    - JVSunBurstView
+    - JVUIViewExtensions
+    - JVView
+  - JVUIViewExtensions (0.1.0)
+  - JVView (0.1.8):
+    - JVConstraintEdges
+    - JVContentType
+    - JVCurrentDevice
+    - JVFontUtils
+    - JVGradientLayer
+    - JVRestartable
+    - JVShapeHalfMoon
+    - JVSizeable
+  - NVActivityIndicatorView (4.4.1):
+    - NVActivityIndicatorView/Presenter (= 4.4.1)
+  - NVActivityIndicatorView/Presenter (4.4.1)
+
+DEPENDENCIES:
+  - JVUIView (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - DeviceKit
+    - NVActivityIndicatorView
+  "https://Jasperav@bitbucket.org/Jasperav/specs.git":
+    - JVCAGradientLayerExtensions
+    - JVCALayerExtensions
+    - JVCAShapeLayerExtensions
+    - JVColorBlender
+    - JVConstraintEdges
+    - JVContentType
+    - JVCurrentDevice
+    - JVFontUtils
+    - JVGradientLayer
+    - JVImageDownloader
+    - JVRandomNumberGenerator
+    - JVResizableViewBorder
+    - JVRestartable
+    - JVShadowView
+    - JVShapeHalfMoon
+    - JVShapes
+    - JVSizeable
+    - JVSunBurstView
+    - JVTimeable
+    - JVUIViewExtensions
+    - JVView
+
+EXTERNAL SOURCES:
+  JVUIView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DeviceKit: a3a86f8dddbe1317a9a243cdf9646858bf135dce
+  JVCAGradientLayerExtensions: fb18d708faf5adef4cb26e9c50f84c536865d18c
+  JVCALayerExtensions: d4d9b389f5d29b8b9086a0f48be5245b81859356
+  JVCAShapeLayerExtensions: efbb4e48e07c68d434fa3a2c5623e787326303e4
+  JVColorBlender: f3935906a26f075cf55e3ecf8547850b68118ce0
+  JVConstraintEdges: c2db42051f75f23126230e4e83e5361a9dd5e18f
+  JVContentType: 4e3a6dd8a99feaff3032928bc808bd3f835ba247
+  JVCurrentDevice: 36aaad85ebb56d935de74e7b3bc47c852899dc39
+  JVFontUtils: e390fee698f64889fafa4ccabd25084bdbf136b7
+  JVGradientLayer: 34e464b6f5624370653606c94229e81dcf1282ea
+  JVImageDownloader: ea6989d84cfcab505e87ae2f7d02dff8ad606958
+  JVRandomNumberGenerator: 320ca0cb049aa0280d6860e460d5d63b8c6a9f56
+  JVResizableViewBorder: 80c25876f7ea18f3cdaa5641a762e3446a4952e3
+  JVRestartable: 008c47ae1b36de3bf2cdad2299852231b5749f2a
+  JVShadowView: c4ecae45df2fe2fd5b3791dcfd3acf05a5b9deb6
+  JVShapeHalfMoon: 31444957e7a226e800003afaee2634c8ba8129a1
+  JVShapes: 4857b9211033fe5c36b76371c4e3317f144739ce
+  JVSizeable: 1252e6b1bed411b3fc34f6119d8eaf6803876cd3
+  JVSunBurstView: 3a17e3c1fda14204290491d3c240c756547f2211
+  JVTimeable: ce8431fb9cfd1b0e45919eeccedda0db748588c8
+  JVUIView: 873903aa2e9ea2bcfc51c90b004250d51ee6f01c
+  JVUIViewExtensions: 3b1408481d2009471e091ad38c9e2b3598c3151d
+  JVView: 91278ed817184df9d64a67e757b066416f5a4e2c
+  NVActivityIndicatorView: f0a6b0ed2973d9544da268f4eb76696f0a9577b0
+
+PODFILE CHECKSUM: 32e58d1e75f316c217206cff0abe04889cc06082
+
+COCOAPODS: 1.6.0.beta.1

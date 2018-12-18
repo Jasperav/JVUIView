@@ -1,0 +1,6 @@
+framework module JVUIViewExtensions {
+  umbrella header "JVUIViewExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}

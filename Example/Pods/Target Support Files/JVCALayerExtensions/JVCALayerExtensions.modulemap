@@ -1,0 +1,6 @@
+framework module JVCALayerExtensions {
+  umbrella header "JVCALayerExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}

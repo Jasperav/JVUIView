@@ -1,0 +1,6 @@
+framework module JVUIView {
+  umbrella header "JVUIView-umbrella.h"
+
+  export *
+  module * { export * }
+}

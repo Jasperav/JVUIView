@@ -1,0 +1,6 @@
+framework module JVColorBlender {
+  umbrella header "JVColorBlender-umbrella.h"
+
+  export *
+  module * { export * }
+}

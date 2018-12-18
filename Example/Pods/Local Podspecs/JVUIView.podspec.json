@@ -1,0 +1,54 @@
+{
+  "name": "JVUIView",
+  "version": "0.1.0",
+  "summary": "JVUIView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Jasperav/JVUIView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Jasperav": "Jasperav@hotmail.com"
+  },
+  "source": {
+    "git": "https://Jasperav@bitbucket.org/Jasperav/jvuiview.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "JVUIView/Classes/**/*",
+  "dependencies": {
+    "JVGradientLayer": [
+
+    ],
+    "JVView": [
+
+    ],
+    "JVConstraintEdges": [
+
+    ],
+    "JVUIViewExtensions": [
+
+    ],
+    "JVImageDownloader": [
+
+    ],
+    "JVResizableViewBorder": [
+
+    ],
+    "JVShadowView": [
+
+    ],
+    "JVFontUtils": [
+
+    ],
+    "JVSunBurstView": [
+
+    ],
+    "JVShapes": [
+
+    ]
+  }
+}

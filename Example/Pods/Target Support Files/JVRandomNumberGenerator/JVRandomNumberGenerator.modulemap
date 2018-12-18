@@ -1,0 +1,6 @@
+framework module JVRandomNumberGenerator {
+  umbrella header "JVRandomNumberGenerator-umbrella.h"
+
+  export *
+  module * { export * }
+}

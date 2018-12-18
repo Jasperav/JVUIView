@@ -1,0 +1,6 @@
+framework module JVImageDownloader {
+  umbrella header "JVImageDownloader-umbrella.h"
+
+  export *
+  module * { export * }
+}
