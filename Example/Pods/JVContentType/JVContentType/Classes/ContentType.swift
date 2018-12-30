@@ -34,16 +34,13 @@ public extension ContentType {
         return Self.allTypes.first(where: { $0.contentTypeId == contentTypeId })!
     }
     
-    /// The contentTypeId makes the contentType unique...
-    var hashValue: Int {
-        get {
-            return contentTypeId!.hashValue
-        }
+    /// The contentTypeId makes the contentType unique.
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(contentTypeId!)
     }
     
-    /// ... therefore this equality method checks the hashValues.
     static func == (lhs: Self, rhs: Self) -> Bool {
-        return lhs.hashValue == rhs.hashValue
+        return lhs.contentTypeId! == rhs.contentTypeId!
     }
     
     init(old: Self, newContentTypeId: String? = nil) {

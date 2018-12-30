@@ -11,7 +11,7 @@ open class JVUIViewDoubleText: JVUIViewText {
     
     open override func setContentType() {
         super.setContentType()
-        contentTypeDoubleText = contentType as! ContentTypeJVUIViewDoubleText
+        contentTypeDoubleText = (contentType as! ContentTypeJVUIViewDoubleText)
         
         labelRight = JVLabelUtils.dynamicInit(contentType: contentTypeDoubleText.contentTypeJVLabelRight)
         labelRight.setCompressionResistance(to: 1)

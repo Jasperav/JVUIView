@@ -2,11 +2,15 @@ import UIKit
 
 public extension UIView {
     
-    public func createTopConstraintToBottom(toBottomOfView: UIView, constant: CGFloat? = nil, multiplier: CGFloat? = nil) {
+    func createLeadingConstraintToTrailing(toRightView: UIView, constant: CGFloat? = nil, multiplier: CGFloat? = nil) {
+         NSLayoutConstraint(item: self, attribute: .leading, relatedBy: .equal, toItem: toRightView, attribute: .trailing, multiplier: multiplier ?? 1, constant: constant ?? 0).isActive = true
+    }
+    
+    func createTopConstraintToBottom(toBottomOfView: UIView, constant: CGFloat? = nil, multiplier: CGFloat? = nil) {
         NSLayoutConstraint(item: self, attribute: .top, relatedBy: .equal, toItem: toBottomOfView, attribute: .bottom, multiplier: multiplier ?? 1, constant: constant ?? 0).isActive = true
     }
     
-    public func fillToMiddleWithSameHeightAndWidth(toView: UIView, addToSuperView: Bool = true, toSafeMargins: Bool = false) {
+    func fillToMiddleWithSameHeightAndWidth(toView: UIView, addToSuperView: Bool = true, toSafeMargins: Bool = false) {
         translatesAutoresizingMaskIntoConstraints = false
         
         if addToSuperView{
@@ -33,7 +37,7 @@ public extension UIView {
         equal(to: toView, height: true, width: true)
     }
     
-    public func fillToMiddle(toSuperview superview: UIView, addToSuperView: Bool = true, toSafeMargins: Bool = false) {
+    func fillToMiddle(toSuperview superview: UIView, addToSuperView: Bool = true, toSafeMargins: Bool = false) {
         translatesAutoresizingMaskIntoConstraints = false
         
         if addToSuperView{
@@ -61,7 +65,7 @@ public extension UIView {
     // Because the normal fill() is used so often and this method just a few times
     // We do not want extra overhead with the unnecessary callbacks
     // That is why this method is introduced, it is just a copy of the normal fill method with a callback
-    public func fillWithResult(toSuperview: UIView, edges: ConstraintEdges? = nil, addToSuperView: Bool = true, toSafeMargins: Bool = false, activateConstraints: Bool = true) -> [NSLayoutConstraint] {
+    func fillWithResult(toSuperview: UIView, edges: ConstraintEdges? = nil, addToSuperView: Bool = true, toSafeMargins: Bool = false, activateConstraints: Bool = true) -> [NSLayoutConstraint] {
         let edgesToUse  = edges ?? ConstraintEdges.zero
         let safeGuide = toSuperview.safeAreaLayoutGuide
         var constraints = [NSLayoutConstraint]()
@@ -112,7 +116,7 @@ public extension UIView {
     }
     
     /// Only fill in 1 corner
-    public func fillMiddleInCorner(toSuperview: UIView, corner: UIRectCorner, addToSuperView: Bool = true) {
+    func fillMiddleInCorner(toSuperview: UIView, corner: UIRectCorner, addToSuperView: Bool = true) {
         assert(!corner.contains(.allCorners))
         translatesAutoresizingMaskIntoConstraints = false
         
@@ -138,7 +142,7 @@ public extension UIView {
         
     }
     
-    public func fill(toSuperview: UIView, edges: ConstraintEdges? = nil, addToSuperView: Bool = true, toSafeMargins: Bool = false) {
+    func fill(toSuperview: UIView, edges: ConstraintEdges? = nil, addToSuperView: Bool = true, toSafeMargins: Bool = false) {
         let edgesToUse  = edges ?? ConstraintEdges.zero
         let safeGuide = toSuperview.safeAreaLayoutGuide
         
@@ -181,7 +185,7 @@ public extension UIView {
         }
     }
     
-    public func equal(to: UIView, height: Bool, width: Bool) {
+    func equal(to: UIView, height: Bool, width: Bool) {
         if height {
             heightAnchor.constraint(equalTo: to.heightAnchor, multiplier: 1).isActive = true
         }
@@ -191,7 +195,7 @@ public extension UIView {
         }
     }
     
-    public func equalWithResult(to: UIView, height: Bool, width: Bool) -> [NSLayoutConstraint] {
+    func equalWithResult(to: UIView, height: Bool, width: Bool) -> [NSLayoutConstraint] {
         var constraints = [NSLayoutConstraint]()
         
         if height {
@@ -207,27 +211,27 @@ public extension UIView {
         return constraints
     }
     
-    public func setWidthAndHeightAreTheSame() {
+    func setWidthAndHeightAreTheSame() {
         heightAnchor.constraint(equalTo: widthAnchor).isActive = true
     }
     
-    public func setSameCenterY(view: UIView) {
+    func setSameCenterY(view: UIView) {
         centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
     
-    public func setSameCenterX(view: UIView) {
+    func setSameCenterX(view: UIView) {
         centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     }
     
-    public func setWidth(_ constant: CGFloat) {
+    func setWidth(_ constant: CGFloat) {
         widthAnchor.constraint(equalToConstant: constant).isActive = true
     }
     
-    public func setHeight(_ constant: CGFloat) {
+    func setHeight(_ constant: CGFloat) {
         heightAnchor.constraint(equalToConstant: constant).isActive = true
     }
     
-    public func setSameWidthAndHeight(toView: UIView) {
+    func setSameWidthAndHeight(toView: UIView) {
         heightAnchor.constraint(equalTo: toView.heightAnchor).isActive = true
         widthAnchor.constraint(equalTo: toView.widthAnchor).isActive = true
     }

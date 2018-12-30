@@ -45,7 +45,7 @@ open class JVUIViewStacked: JVUIView {
     
     open override func setContentType() {
         super.setContentType()
-        contentTypeStacked = contentType as! ContentTypeJVUIViewStacked
+        contentTypeStacked = (contentType as! ContentTypeJVUIViewStacked)
         var views = [UIView]()
         
         for contentTypeJVUIView in contentTypeStacked.contentTypesJVUIView {

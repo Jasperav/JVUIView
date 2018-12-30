@@ -1,6 +1,6 @@
 {
   "name": "JVUIView",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "summary": "JVUIView.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Jasperav/JVUIView",
@@ -12,8 +12,8 @@
     "Jasperav": "Jasperav@hotmail.com"
   },
   "source": {
-    "git": "https://Jasperav@bitbucket.org/Jasperav/jvuiview.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/Jasperav/JVUIView.git",
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "11.0"

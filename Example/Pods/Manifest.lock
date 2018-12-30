@@ -6,10 +6,10 @@ PODS:
   - JVColorBlender (0.1.4):
     - JVContentType
     - JVRandomNumberGenerator
-  - JVConstraintEdges (0.1.9):
+  - JVConstraintEdges (0.2.1):
     - JVContentType
     - JVSizeable
-  - JVContentType (0.1.6)
+  - JVContentType (0.1.7)
   - JVCurrentDevice (0.1.1):
     - DeviceKit
   - JVFontUtils (0.1.0)
@@ -48,7 +48,7 @@ PODS:
     - JVUIViewExtensions
   - JVTimeable (0.1.8):
     - JVRestartable
-  - JVUIView (0.1.0):
+  - JVUIView (0.1.2):
     - JVConstraintEdges
     - JVFontUtils
     - JVGradientLayer
@@ -69,9 +69,9 @@ PODS:
     - JVRestartable
     - JVShapeHalfMoon
     - JVSizeable
-  - NVActivityIndicatorView (4.4.1):
-    - NVActivityIndicatorView/Presenter (= 4.4.1)
-  - NVActivityIndicatorView/Presenter (4.4.1)
+  - NVActivityIndicatorView (4.5.1):
+    - NVActivityIndicatorView/Presenter (= 4.5.1)
+  - NVActivityIndicatorView/Presenter (4.5.1)
 
 DEPENDENCIES:
   - JVUIView (from `../`)
@@ -113,8 +113,8 @@ SPEC CHECKSUMS:
   JVCALayerExtensions: d4d9b389f5d29b8b9086a0f48be5245b81859356
   JVCAShapeLayerExtensions: efbb4e48e07c68d434fa3a2c5623e787326303e4
   JVColorBlender: f3935906a26f075cf55e3ecf8547850b68118ce0
-  JVConstraintEdges: c2db42051f75f23126230e4e83e5361a9dd5e18f
-  JVContentType: 4e3a6dd8a99feaff3032928bc808bd3f835ba247
+  JVConstraintEdges: 638cad2ce7ebd53bacf46903d9f1440ad79931d3
+  JVContentType: bf617302d029baefccde48eb79edc7634fd15f55
   JVCurrentDevice: 36aaad85ebb56d935de74e7b3bc47c852899dc39
   JVFontUtils: e390fee698f64889fafa4ccabd25084bdbf136b7
   JVGradientLayer: 34e464b6f5624370653606c94229e81dcf1282ea
@@ -128,10 +128,10 @@ SPEC CHECKSUMS:
   JVSizeable: 1252e6b1bed411b3fc34f6119d8eaf6803876cd3
   JVSunBurstView: 3a17e3c1fda14204290491d3c240c756547f2211
   JVTimeable: ce8431fb9cfd1b0e45919eeccedda0db748588c8
-  JVUIView: 873903aa2e9ea2bcfc51c90b004250d51ee6f01c
+  JVUIView: 8cf4bde4f26125e203cccfdbbbb6635551717194
   JVUIViewExtensions: 3b1408481d2009471e091ad38c9e2b3598c3151d
   JVView: 91278ed817184df9d64a67e757b066416f5a4e2c
-  NVActivityIndicatorView: f0a6b0ed2973d9544da268f4eb76696f0a9577b0
+  NVActivityIndicatorView: ec34a7b88c51fab270004a1a1f32116e711010cd
 
 PODFILE CHECKSUM: 32e58d1e75f316c217206cff0abe04889cc06082
 

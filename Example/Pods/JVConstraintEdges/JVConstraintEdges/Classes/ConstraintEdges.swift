@@ -81,7 +81,7 @@ public struct ConstraintEdges: Sizeable, Decodable {
         return UIEdgeInsets(top: top ?? 0, left: leading ?? 0, bottom: bottom ?? 0, right: trailing ?? 0)
     }
     
-    mutating public func minus(edge: UIRectEdge) {
+    public mutating func minus(edge: UIRectEdge) {
         self = min(edge)
     }
     
@@ -101,7 +101,7 @@ public struct ConstraintEdges: Sizeable, Decodable {
         return ConstraintEdges(leading: leading, trailing: trailing, top: top, bottom: nil)
     }
     
-    mutating public func inverse() {
+    public mutating func inverse() {
         self = inversed()
     }
     
@@ -147,7 +147,7 @@ public struct ConstraintEdges: Sizeable, Decodable {
     }
     
     /// Leave nil to add it to all edges
-    mutating public func add(_ value: CGFloat, edge: UIRectEdge) {
+    public mutating func add(_ value: CGFloat, edge: UIRectEdge) {
         self = added(value, edge: edge)
     }
     

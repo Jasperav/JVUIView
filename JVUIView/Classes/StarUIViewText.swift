@@ -73,7 +73,7 @@ open class JVUIViewText: JVUIView {
     
     open override func setContentType() {
         super.setContentType()
-        contentTypeText = contentType as! ContentTypeJVUIViewText
+        contentTypeText = (contentType as! ContentTypeJVUIViewText)
         setupText()
         
         guard let constant = minimumWidthConstant else { return }
